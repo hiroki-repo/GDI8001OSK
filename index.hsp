@@ -8,7 +8,7 @@
 #func CloseTouchInputHandle "CloseTouchInputHandle" int
 //#func ScreenToClient "ScreenToClient" int,int
 
-SetProcessDPIAware
+if varptr(SetProcessDPIAware)!0{SetProcessDPIAware}
 
 #define NID_MULTI_INPUT		0x40	; マルチタッチ可能フラグ
 #define NID_READY		0x80	; タッチ入力可能フラグ
@@ -73,7 +73,7 @@ sysm=GetSystemMetrics(SM_DIGITIZER)
 i=NID_MULTI_INPUT|NID_READY
 if (sysm&i)!=i {
 }else{
-RegisterTouchWindow hwnd,0
+if varptr(RegisterTouchWindow)!0{RegisterTouchWindow hwnd,0}
 }
 color 150,120,100
 keysizex=40:keysizey=40:keycnts=0:keycntst=0:keycntsx=14,13,14,11,1:keycntsxx=20,20,0,15,80,120:keycntsprev=0
