@@ -1,3 +1,4 @@
+#include "hsp3c.as"
 #include "user32.as"
 #func RegisterTouchWindow "RegisterTouchWindow" int,int
 #func SetProcessDPIAware "SetProcessDPIAware"

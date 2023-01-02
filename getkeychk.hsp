@@ -1,0 +1,9 @@
+title "ƒL[“ü—Í‚µ‚Ä‚­‚¾‚³‚¢(^^)v"
+onkey *inkey
+onclick *inkey
+stop
+*inkey
+if lparam>>30:stop
+//mes wparam
+dialog wparam
+stop

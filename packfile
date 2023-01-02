@@ -1,6 +1,7 @@
 ;
 ;	source generated packfile
 ;
+;!runtime=hsp3c.hrt
 ;!name=gdi8001key
 ;!icon=gdi8001.ico
 ;!hide=1
